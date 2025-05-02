@@ -19,6 +19,7 @@ plan 1;
 
 subtest {
     plan 3;
+    say "Cols: {$b.columns}, Rows: {$b.rows}";
 
     lives-ok {
         for $b.indices -> [$x, $y] {
